@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="hello">hello world!</div>
+		<div>
+			<button id="red">变为红色</button>
+			<button id="black">复原</button>
+		</div>
+		<script>
+			var hello = document.getElementById('hello');
+			var red = document.getElementById('red');
+			var black = document.getElementById('black');
+			red.onclick = function(){
+				hello.style.color = 'red';
+			}
+			black.onclick = function(){
+				hello.style.color = 'black';
+			}
+		</script>
+	</body>
+</html>
